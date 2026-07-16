@@ -36,19 +36,22 @@ Answer the following in your own words:
 
 **1. What is Bash?**
 
-Add your answer here.
+Bash (Bourne Again Shell) is a command-line shell and scripting language used in Linux and other Unix-based systems. It allows users to interact with the operating system by typing commands to perform tasks such as managing files, running programs, and configuring systems. Bash can also be used to write shell scripts that automate repetitive tasks and simplify system administration.
 
 ---
 
 **2. What is the difference between shell and Bash?**
 
-Add your answer here.
+The difference is that shell is the general concept, while Bash is a specific type of shell.
+
+A shell is a program that provides a way for users to communicate with the operating system by entering commands. There are different types of shells, such as Bash, Zsh, Fish, and the C shell (csh).
+Bash (Bourne Again Shell) is one specific shell that is widely used in Linux systems. It understands shell commands and also provides scripting features that allow users to automate tasks by writing Bash scripts.
 
 ---
 
 **3. Why is it important to confirm the Bash version before writing scripts?**
 
-Add your answer here.
+Confirming the Bash version before writing scripts is important because different Bash versions may support different features and commands. A script written using newer Bash features may fail or behave unexpectedly if it is run on an older version of Bash. Checking the version helps ensure compatibility, prevents errors, and makes the script more reliable across different systems.
 
 ---
 
@@ -84,19 +87,19 @@ Answer the following in your own words:
 
 **1. What is the purpose of `#!/bin/bash`?**
 
-Add your answer here.
+#!/bin/bash tells the operating system that the script should be executed using the Bash shell interpreter. It ensures that Bash-specific commands and features are handled correctly when the script runs, making the script behave consistently across systems.
 
 ---
 
 **2. Why do we use `chmod +x` before running a script?**
 
-Add your answer here.
+We use chmod +x to give a script execute permission, allowing the operating system to run it as a program. Without this permission, the script may exist but cannot be executed directly using a command like ./script.sh.
 
 ---
 
 **3. What is the difference between running a script using `./script.sh` and `bash script.sh`?**
 
-Add your answer here.
+The difference is that ./script.sh runs the script as an executable file and requires execute permission (chmod +x), while bash script.sh runs the script by directly passing it to the Bash interpreter and does not require execute permission. Using ./script.sh relies on the shebang line (#!/bin/bash) to determine the interpreter, while bash script.sh explicitly tells Bash to run the script.
 
 ---
 
@@ -126,19 +129,19 @@ Answer the following in your own words:
 
 **1. What is a variable in Bash?**
 
-Add your answer here.
+A variable in Bash is a named storage location used to hold and reference data such as text, numbers, or command results. Variables allow scripts to store information temporarily and reuse it throughout the script, making automation tasks more flexible and easier to manage.
 
 ---
 
 **2. Why should we avoid spaces around the `=` sign when creating variables?**
 
-Add your answer here.
+We should avoid spaces around the = sign when creating variables in Bash because Bash does not recognize spaces in variable assignments. Spaces make Bash interpret the statement as a command instead of assigning a value to a variable, which can cause errors.
 
 ---
 
 **3. How do you access the value stored inside a Bash variable?**
 
-Add your answer here.
+You access the value stored inside a Bash variable by placing a $ sign before the variable name. This tells Bash to use the value stored in that variable instead of the variable name itself.
 
 ---
 
