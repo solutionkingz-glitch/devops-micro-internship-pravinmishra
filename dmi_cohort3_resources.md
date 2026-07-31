@@ -111,7 +111,7 @@ Attendance is worth **10 points** for each Saturday session:
 
 You can earn a maximum of **30 attendance points per week**.
 
-**Note:** Attendance grading begins in **Week 4**. **Weeks 1–3 do not include attendance points.**
+**Note:** Attendance grading begins in **Week 2**. **Weeks 0–1 do not include attendance points.**
 
 ### 6. Screenshots
 
