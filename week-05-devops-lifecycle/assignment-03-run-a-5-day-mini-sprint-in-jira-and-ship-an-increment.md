@@ -20,13 +20,13 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img1.png)
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img2.png)
 
 ---
 
@@ -40,25 +40,25 @@ Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img3.png)
 
 ---
 
 #### Screenshot 4 — Successful Git commit output
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img4.png)
 
 ---
 
 #### Screenshot 5 — EC2 browser view showing the complete footer text, with the URL visible
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img5.png)
 
 ---
 
 #### Screenshot 6 — Jira Story comment showing the Day 1 Daily Scrum update
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img6.png)
 
 ---
 
@@ -72,25 +72,25 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic or deployment-time template snippet
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img7.png)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img8.png)
 
 ---
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img9.png)
 
 ---
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img10.png)
 
 ---
 
@@ -104,19 +104,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img11.png)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img12.png)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img13.png)
 
 ---
 
@@ -130,7 +130,9 @@ Replace the existing homepage tagline with the required DMI Website call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img14a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn3-img14b.png)
 
 ---
 
@@ -144,19 +146,19 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img15.png)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img16.png)
 
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img17.png)
 
 ---
 
@@ -164,7 +166,7 @@ Add your screenshot here.
 
 Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
-`Add your URL here`
+https://drive.google.com/file/d/1xPt4nvfTgqPD9qMxUw3n49g1X8HAkwf9/view?usp=sharing
 
 ---
 
@@ -180,13 +182,13 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-aws-cloudcomputing-ugcPost-7490840115200626688-9zyJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 ---
 
 #### LinkedIn Screenshot 1 — Published LinkedIn post showing the post content and at least one required link or proof image
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img18.png)
 
 ---
 
