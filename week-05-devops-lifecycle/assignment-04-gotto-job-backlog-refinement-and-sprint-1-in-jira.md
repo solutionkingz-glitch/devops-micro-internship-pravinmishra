@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img1.png)
 
 ---
 
@@ -28,7 +28,20 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+Working Mode:
+Solo Mode
+
+Product Owner (PO):
+Prioritized the highest-value UI improvement for Sprint 1.
+
+Srum Master (SM):
+Planned Sprint 1, managed Jira workflow, and tracked progress.
+
+Development Lead:
+Implemented and tested the required UI changes.
+
+DevOps Lead:
+Deployed the updated website to AWS EC2 and verified the live site.
 
 ---
 
@@ -42,7 +55,7 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img2.png)
 
 ---
 
@@ -56,7 +69,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img3.png)
 
 ---
 
@@ -70,13 +83,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img4.png)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img5.png)
 
 ---
 
@@ -90,7 +103,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img6.png)
 
 ---
 
@@ -98,7 +111,16 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+Estimated at 1 Story Point because this is a simple UI update with very little risk and can be completed quickly.
+Solo discussion: No major debate. The estimate was straightforward.
+
+
+Estimated at 2 Story Points because it requires moderate implementation and testing.
+Solo discussion: Considered giving it 3 points, but since no major backend changes are involved, 2 points seemed more appropriate.
+
+
+Estimated at 3 Story Points because the work involves multiple implementation steps and has more uncertainty.
+Solo discussion: Debated between 2 and 3 points. Chose 3 because additional testing and integration increase the overall effort.
 
 ---
 
@@ -112,13 +134,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img7.png)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img8.png)
 
 ---
 
@@ -132,7 +154,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img9.png)
 
 ---
 
@@ -146,19 +168,21 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img10.png)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img11.png)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img12a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn4-img12b.png)
 
 ---
 
@@ -172,7 +196,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img3.png)
 
 ---
 
@@ -188,13 +212,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-aws-jira-ugcPost-7491224800065921024-6qvF/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img14.png)
 
 ---
 
