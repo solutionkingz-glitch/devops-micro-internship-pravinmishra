@@ -3,8 +3,8 @@
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-5%2F15-green?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-5%2F14-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-6%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-6%2F14-green?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -86,9 +86,8 @@ Week 04 → Git & GitHub
 Week 05 → DevOps Lifecycle & Agile
 [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/)
 
-<!-- Week 06 → AWS Cloud -->
-<!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
-
+Week 06 → AWS Cloud
+[![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
 <!-- Week 07 → Azure Cloud -->
 <!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
 
@@ -136,7 +135,7 @@ Week 05 → DevOps Lifecycle & Agile
 | 03 | Linux for DevOps | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-aws-cloudcomputing-ugcPost-7484040078927806464-9rDl/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY| https://kingzcloud.hashnode.dev/from-aws-deployment-to-ai-assisted-operations |
 | 04 | Git & GitHub | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-aws-git-ugcPost-7486084742434697217-Wqx_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/from-git-init-to-ai-assisted-devops|
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineering-jira-ugcPost-7490267628687671296-pg76/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/from-jira-to-ec2-project |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | AWS Cloud | 🔄 In Progress | 🔄 In Progress | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
