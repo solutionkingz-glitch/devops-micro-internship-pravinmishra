@@ -20,7 +20,7 @@ Confirm your Azure CLI is authenticated and can see the VM, network, storage acc
 
 #### Screenshot 1 — `az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` for this workspace that tells Claude what the audit covers 
 
 #### Screenshot 2 — `CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img2.png)
 
 ---
 
@@ -48,7 +48,9 @@ Ask Claude Code to read `CLAUDE.md` and propose a read-only, four-check audit pl
 
 #### Screenshot 3 — Claude Code showing the four-check plan, with no files created or modified
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img3a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn7-img3b.png)
 
 ---
 
@@ -62,13 +64,13 @@ Write a Bash script that runs the four checks from Task 3 using read-only `az` c
 
 #### Screenshot 4 — Your script open in your editor, showing the check functions and the `az` commands they call
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img4.png)
 
 ---
 
 #### Screenshot 5 — Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img5.png)
 
 ---
 
@@ -82,7 +84,7 @@ Run the script against your live resources and read the report honestly, even if
 
 #### Screenshot 6 — Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img6.png)
 
 ---
 
@@ -96,13 +98,15 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 7 — Your skill file's frontmatter showing `allowed-tools` without `Write`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img7.png)
 
 ---
 
 #### Screenshot 8 — `/azure-audit` output showing the baseline findings and Claude's explanation
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img8a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn7-img8b.png)
 
 ---
 
@@ -116,19 +120,19 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 9 — Saved report showing the original finding before the fix
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img9.png)
 
 ---
 
 #### Screenshot 10 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img10.png)
 
 ---
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn7-img11.png)
 
 ---
 
@@ -136,7 +140,16 @@ Add your screenshot here.
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
+When I compare this Azure audit with the AWS audit from Week 6, the resources and CLI commands are different, but the security checks are very similar. The four main areas have clear equivalents between both clouds. Network accessibility in AWS, such as Security Group rules allowing ports 22 or 3389, corresponds to Azure NSG rules that expose those same ports. Public data exposure in AWS relates to the S3 bucket's public access configuration, while Azure uses the Storage Account's `allowBlobPublicAccess` setting. Encryption at rest is checked through RDS storage encryption in AWS and VM OS disk encryption in Azure. Finally, public database exposure is represented by the RDS `PubliclyAccessible` setting in AWS and the MySQL Flexible Server `publicNetworkAccess` setting in Azure.
+
+The biggest similarity was the overall audit process rather than the specific commands. Both audits followed the same Agentic Loop: first collect evidence using read-only CLI commands, then have Claude review the results and identify potential risks, allow a human to carry out any necessary remediation, and finally run the audit again to confirm the changes.
+
+Both scripts were deliberately designed to be read-only, using commands such as `list`, `show`, and `describe` instead of commands that create, modify, or delete resources. The `CLAUDE.md` instructions in both projects also clearly identified destructive commands that should not be used and prevented Claude from applying fixes directly, even when Claude suggested the remediation steps.
+
+Another common feature was the use of separate exit codes for `HEALTHY`, `WARN`, and `FAIL`, which provided more useful results than simply returning a pass/fail status. I also found that working out the exact Azure and AWS CLI commands with Claude before implementing the Bash scripts helped identify resource-naming and command differences early. One example was the difference between AWS RDS's terminology and Azure's Flexible Server terminology.
+
+Overall, the cloud platforms, resource names, and CLI syntax were completely different, but the core audit methodology remained consistent. The same principles were applied to evidence collection, security checks, human-controlled remediation, verification, and severity reporting across both AWS and Azure.
+
 
 ---
 
