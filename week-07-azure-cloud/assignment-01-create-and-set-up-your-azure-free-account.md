@@ -17,7 +17,7 @@ In this assignment, you will set up a fully functional Microsoft Azure Free Acco
 Complete the Azure Free Account registration process, including Microsoft account sign-in, personal details, identity and phone verification, payment verification, and acceptance of the required terms.
 
 > No screenshot required for this task. Do not capture payment-card details. Completion is verified through Task 2.
-
+![Assignment 5 Screenshots](screenshots/assgn1-img2.png)
 ---
 
 # Task 5 — Access and Explore the Azure Portal
@@ -36,7 +36,7 @@ Confirm successful Azure Portal access and Locate the required services and subs
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-![Assignment 5 Screenshots](screenshots/assgn1-img2.png)
+
 
 ---
 
