@@ -137,7 +137,7 @@ Week 08 → Terraform
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineering-jira-ugcPost-7490267628687671296-pg76/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/from-jira-to-ec2-project |
 | 06 | AWS Cloud | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-aws-cloudengineering-ugcPost-7494461921476362240-bufX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/production-style-aws-deployment |
 | 07 | Azure Cloud | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azure-microsoftazure-ugcPost-7496358268957716480-jz2I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/azure-devops-projects-three-tier-architecture-ai-security-audit |
-| 08 | Terraform | 🔄 In Progress | 🔄 In Progress | — | — |
+| 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/feed/update/urn:li:activity:7501245143954583552/ | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
