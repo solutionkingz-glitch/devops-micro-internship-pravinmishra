@@ -29,6 +29,7 @@ Use the P.S. line for **your track**.
 | Cohort 3 (Live) |
 | DMI-Foundation Track |
 | DMI-Self-Paced Engineer Track |
+| DMI-Self-Paced Engineer Track (DMI Campus) |
 
 ### Cohort 3 (Live) Track
 
@@ -407,7 +408,7 @@ Week-8 is **6 assignment files**, each graded pass/fail — your LinkedIn post a
 
 | S. No. | Item | Comments | Link |
 |--------|------|----------|------|
-| 1 | Week-9 Class Recording | Watch the recording of the Week-9 live class on YouTube | - |
+| 1 | Week-9 Class Recording | Watch the recording of the Week-9 live class on YouTube | [YouTube](https://youtube.com/live/QOqrfVFacpc?feature=share) |
 
 ---
 
