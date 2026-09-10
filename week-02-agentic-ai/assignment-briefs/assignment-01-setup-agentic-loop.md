@@ -29,6 +29,7 @@ Every DevOps engineer working with agentic AI starts the same way — setting up
 - Fork and clone the course starter repository
 - Observe the three phases of the Agentic Loop: Gather, Act, Verify
 - Understand how Claude Code differs from Claude chat
+- Share your first Agentic AI achievement with your professional network
 
 ---
 
@@ -135,6 +136,41 @@ How many lines of CSS does this project have?
 
 ---
 
+### Task 4 — Share Your First Agentic AI Achievement
+
+**Goal:** Celebrate your first Agentic AI milestone and share your learning progress with your professional network.
+
+**Steps:**
+
+1. Go to the **DMI Leaderboard**.
+2. Find your name.
+3. Select **Share your progress**.
+4. Click the **LinkedIn icon**.
+5. LinkedIn will open with your automatically generated leaderboard progress link.
+6. Copy and paste the post content provided below.
+7. Keep the automatically generated leaderboard link in your post.
+8. Review and publish your post.
+
+**LinkedIn Post Content:**
+
+```text
+I’ve completed my first Agentic AI session! 🚀
+
+I installed and authenticated Claude Code, explored a real project, and observed the Agentic Loop—Gather, Act, and Verify—in action.
+
+This is my first step toward using Agentic AI in real-world DevOps workflows.
+
+You can view my learning progress on the DMI Leaderboard using the link below.
+
+#AgenticAI #ClaudeCode #DevOps #DMI #ContinuousLearning
+```
+
+**Expected Output:** A published LinkedIn post describing your first Agentic AI session and containing your automatically generated DMI Leaderboard progress link.
+
+**Evidence Required:** No additional screenshot is required for this task.
+
+---
+
 ## 8. Industry Insight
 
 In professional agentic DevOps teams, engineers do not use Claude Code blind. Before trusting it with infrastructure, they watch it work on safe, low-stakes tasks — reading files, counting lines, describing what it sees. This is how you build calibration: you learn what Claude does well, where it guesses, and when it needs more context. That calibration is exactly what the rest of this week builds on.
@@ -161,7 +197,11 @@ Full solution walkthrough → [Click here](../assignment-solutions/assignment-01
 
 ## 11. LinkedIn Requirement
 
-Not required for this assignment.
+Required for this assignment.
+
+Follow the instructions in **Task 4**, copy and paste the provided content, keep your automatically generated DMI Leaderboard progress link, and publish the post on LinkedIn.
+
+No additional screenshot is required.
 
 ---
 
@@ -173,5 +213,6 @@ Before submission, verify:
 - [ ] Starter repo forked and cloned
 - [ ] All 5 screenshots captured and added to your GitHub Repository file
 - [ ] GitHub repo URL included
+- [ ] First Agentic AI achievement shared on LinkedIn using the provided content
 
 ---
