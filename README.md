@@ -3,8 +3,8 @@
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-8%2F15-green?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-8%2F14-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-9%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-9%2F14-green?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -36,15 +36,17 @@ This is not a course. It is an internship-style program — real deployments, re
 
 ---
 
-## 🏆 Achievements
-
 ### Champion of the Week
 
 <!-- If you were named Champion of the Week, add the badge below and link to your LinkedIn post -->
 
 | Week | Award | Post |
 |------|-------|------|
-| <!-- e.g. Week 03 --> | <!-- 🏆 Champion of the Week --> | <!-- [LinkedIn Post](#) --> |
+Week 06 | Champion of the Week |  https://www.linkedin.com/postskingsley-erhatiemwonmon_devops-aws-cloudcomputing-activity-7500147147355471874-nIZO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
+
+
+## 🏆 Achievements
+
 
 ### Leaderboard
 
@@ -94,8 +96,8 @@ Week 07 → Azure Cloud
 Week 08 → Terraform
 [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
-<!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+Week 09 → Ansible
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
 
 <!-- Week 10 → Azure DevOps CI/CD -->
 <!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
@@ -137,7 +139,7 @@ Week 08 → Terraform
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineering-jira-ugcPost-7490267628687671296-pg76/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/from-jira-to-ec2-project |
 | 06 | AWS Cloud | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-aws-cloudengineering-ugcPost-7494461921476362240-bufX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/production-style-aws-deployment |
 | 07 | Azure Cloud | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azure-microsoftazure-ugcPost-7496358268957716480-jz2I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/azure-devops-projects-three-tier-architecture-ai-security-audit |
-| 08 | Terraform | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudcomputing-aws-ugcPost-7501245140712402944-X660/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | — |
+| 08 | Terraform | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudcomputing-aws-ugcPost-7501245140712402944-X660/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/terraform-drift-detection-with-claude-code-building-a-safe-ai-assisted-infrastructure-review-workflow |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
