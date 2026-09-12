@@ -106,9 +106,9 @@ Create a Bash script that gathers Terraform plan evidence and checks it for dest
 
 Add a screenshot of the top section of `tf-drift-check.sh` showing the variables and `checks` array.
 
-![Assignment 5 Screenshots](screenshots/assgn6-img4.png)
-
 ![Assignment 5 Screenshots](screenshots/assgn6-img4a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn6-img4b.png)
 
 ---
 
@@ -116,9 +116,9 @@ Add a screenshot of the top section of `tf-drift-check.sh` showing the variables
 
 Add a screenshot showing `check_destructive_actions` and `check_open_ingress`, including the `jq` checks.
 
-![Assignment 5 Screenshots](screenshots/assgn6-img5.png)
-
 ![Assignment 5 Screenshots](screenshots/assgn6-img5a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn6-img5b.png)
 
 ---
 
