@@ -50,7 +50,7 @@ Every DevOps engineer working with agentic AI starts the same way — setting up
 - Git installed and configured (Verify using `git --version`)
 - GitHub account
 - VS Code installed (Vrify using `code --version`)
-- Claude subscription (Pro plan minimum)
+- Claude subscription 
 
 ---
 
