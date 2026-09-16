@@ -183,7 +183,7 @@ In professional agentic DevOps teams, engineers do not use Claude Code blind. Be
 Complete all tasks in sequence.
 
 Your submission must include:
-- All 5 required screenshots
+- All 6 required screenshots
 - Your GitHub forked repository URL
 
 ---
