@@ -24,7 +24,7 @@ Create the assignment workspace, initialize a Git repository, prepare the requir
 
 #### Screenshot 1 — Terminal showing the `ansible-onboarding` path, `ls -la` output, and `git status` confirming the Git repository is on the `main` branch
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img1.png)
 
 ---
 
@@ -38,7 +38,7 @@ Create an isolated Python virtual environment and install Ansible and the requir
 
 #### Screenshot 2 — Terminal showing the active `(.venv)` environment, `which ansible`, `ansible --version`, `ansible-lint --version`, `yamllint --version`, and `pre-commit --version`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img2.png)
 
 ---
 
@@ -52,13 +52,13 @@ Configure Visual Studio Code to use the project’s Python virtual environment a
 
 #### Screenshot 3 — VS Code Extensions panel showing the Ansible, YAML, and Python extensions installed
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img3.png)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig` open side by side, with the required settings clearly visible
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img4.png)
 
 ---
 
@@ -72,13 +72,13 @@ Create a reusable `ansible.cfg` file containing the default settings that will b
 
 #### Screenshot 5 — `ansible.cfg` open in VS Code or another editor, showing the complete configuration
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img5.png)
 
 ---
 
 #### Screenshot 6 — Terminal showing `ansible --version` with the `ansible.cfg` path and the output of `ansible-config dump --only-changed`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img6.png)
 
 ---
 
@@ -92,7 +92,7 @@ Prepare SSH key authentication, load the key into the SSH agent, configure reusa
 
 #### Screenshot 7 — Terminal showing `ssh-add -l` with the ED25519 key loaded and the SSH configuration verification output
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img7.png)
 
 ---
 
@@ -106,7 +106,7 @@ Configure your Git identity and install pre-commit hooks that validate YAML and 
 
 #### Screenshot 8 — Terminal showing your Git full name, Git email, default branch, successful `pre-commit install` output, and `.git/hooks/pre-commit`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img8.png)
 
 ---
 
@@ -120,13 +120,13 @@ Verify that Ansible, the linting tools, Git hooks, SSH agent, and Git ignore rul
 
 #### Screenshot 9 — Terminal showing `pre-commit run --all-files` completing successfully
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img9.png)
 
 ---
 
 #### Screenshot 10 — Terminal showing `ansible --version` with the project configuration path and `ssh-add -l` with the ED25519 key loaded
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img10.png)
 
 ---
 
@@ -140,13 +140,15 @@ Document the completed Ansible workstation setup and create a reusable checklist
 
 #### Screenshot 11 — Terminal showing the final `ansible-onboarding` project structure
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img11.png)
 
 ---
 
 #### Screenshot 12 — VS Code Markdown preview showing your full name, project summary, and part of the “New Machine? Do This” checklist
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img12a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn1-img12b.png)
 
 ---
 
@@ -156,25 +158,25 @@ Answer the following in your own words:
 
 **1. What is one feature that makes your workstation setup team-friendly?**
 
-Add your answer here.
+One feature that makes my workstation setup team-friendly is the use of shared project configuration and automated validation. Files such as `ansible.cfg`, `.gitignore`, and `.pre-commit-config.yaml` are stored with the project so that team members can follow the same Ansible configuration, Git rules, and code-quality checks. The pre-commit hooks automatically run `yamllint` and `ansible-lint`, helping the team identify formatting and Ansible issues before changes are committed. This makes the setup more consistent, easier to reproduce, and less dependent on each developer's individual workstation configuration.
 
 ---
 
 **2. What is one pitfall you avoided while completing the setup?**
 
-Add your answer here.
+One pitfall I avoided was installing Ansible and its Python dependencies globally on the system. Instead, I created and used a `.venv` virtual environment for the project. This keeps the project's dependencies isolated from the system Python installation, reduces the risk of dependency conflicts with other projects, and makes the workstation easier to reproduce on another machine. I also ensured that the SSH private key was not exposed or committed to the Git repository.
 
 ---
 
 **3. Why should Ansible be installed inside a Python virtual environment?**
 
-Add your answer here.
+Ansible should be installed inside a Python virtual environment to keep its Python dependencies isolated from the system Python installation. This helps prevent dependency conflicts with other applications or projects that may require different package versions. It also makes the Ansible workstation easier to reproduce, maintain, and troubleshoot because the project has its own controlled set of dependencies without affecting the rest of the system.
 
 ---
 
 **4. Why must SSH private keys and `.venv/` remain outside version control?**
 
-Add your answer here.
+SSH private keys must remain outside version control because they are sensitive credentials that can provide unauthorized access to servers, GitHub accounts, or other systems if exposed. They should never be committed to a repository or shared with other users. The `.venv/` directory should also remain outside version control because it contains locally installed Python packages and environment-specific files that can be recreated on another machine. Committing it would unnecessarily increase the repository size and could cause compatibility and dependency problems. Instead, the project should track the dependency requirements and configuration needed to recreate the environment.
 
 ---
 
