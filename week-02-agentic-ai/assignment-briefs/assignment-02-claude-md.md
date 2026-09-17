@@ -62,9 +62,9 @@ Each task must be completed sequentially.
 **Goal:** Screenshot Claude's answer before CLAUDE.md exists so you have a baseline to compare.
 
 **Steps:**
-1. Commit the deleted files in previous assignment. 
-2. Open Claude Code in your project
-3. Confirm there is no CLAUDE.md file (the project should only have `index.html`, `style.css`, `images/`, `README.MD`, `privacy.html`, `terms.html`)
+1. Commit the deleted files in previous assignment.
+2. Confirm there is no CLAUDE.md file (the project should only have `index.html`, `style.css`, `images/`, `README.MD`, `privacy.html`, `terms.html`)
+3. Open Claude Code in your project
 4. Ask this exact question: `"What is this project and how should I deploy it?"`
 5. Screenshot the response — it will be generic and vague
 
