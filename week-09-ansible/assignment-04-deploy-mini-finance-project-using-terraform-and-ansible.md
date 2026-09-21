@@ -516,7 +516,7 @@ The inventory is also the link between Terraform and Ansible. Terraform creates 
 
 **6. Why does the playbook use separate plays for install, deploy, and verify?**
 
-Add your answer here.Separate plays give each stage of the deployment one clear job. In my playbook, Play 1 installs and configures the server (nginx, git, rsync, and the Nginx service). Play 2 deploys the application by cloning the Mini Finance repository, synchronizing the files to /var/www/html/, and setting the www-data ownership. Play 3 verifies the result by checking that the website returns HTTP 200. The plays also run in order, so the website is deployed only after the server is ready, and it is verified only after it has been deployed.
+Separate plays give each stage of the deployment one clear job. In my playbook, Play 1 installs and configures the server (nginx, git, rsync, and the Nginx service). Play 2 deploys the application by cloning the Mini Finance repository, synchronizing the files to /var/www/html/, and setting the www-data ownership. Play 3 verifies the result by checking that the website returns HTTP 200. The plays also run in order, so the website is deployed only after the server is ready, and it is verified only after it has been deployed.
 
 The plays also need different settings. Plays 1 and 2 run against the web group on the Azure VM with become: true, because installing packages and writing to /var/www/html need administrative privileges. Play 3 runs on localhost with connection: local, gather_facts: false, and no privilege escalation, because the check is an HTTP request from the controller and doesn't need any of those. Separate plays let me set target hosts, connection, and become for each stage.
 
