@@ -30,7 +30,7 @@ cat .dockerignore
 
 The file must exclude `node_modules`, `build`, and `.env`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img1.png)
 
 ---
 
@@ -46,7 +46,7 @@ Create a baseline single-stage Docker image and run the application on port 3000
 
 Add a screenshot showing the completed `Dockerfile.single`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img2.png)
 
 ---
 
@@ -60,7 +60,7 @@ http://localhost:3000
 
 Ensure that your full name is visible in the application.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img3.png)
 
 ---
 
@@ -76,7 +76,7 @@ Create an optimized multi-stage Docker image with separate builder and Nginx run
 
 Add a screenshot showing the completed multi-stage `Dockerfile`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img4.png)
 
 ---
 
@@ -90,7 +90,7 @@ http://localhost
 
 Ensure that your full name is visible in the application.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img5.png)
 
 ---
 
@@ -117,7 +117,7 @@ react-single:latest
 react-multistage:latest
 ```
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img6.png)
 
 ---
 
@@ -134,7 +134,7 @@ Percentage reduction =
 ((Single-stage image size − Multi-stage image size)
 ÷ Single-stage image size) × 100
 
-Percentage reduction: Add result here
+Percentage reduction: The single-stage image came out to 2.17 GB, while the multi-stage image was only 95 MB — a reduction of approximately 95.6%. This is because the single-stage build keeps Node.js, all node_modules, and the full application source code in the final image, while the multi-stage build discards the entire build environment and keeps only the compiled static files served by nginx:alpine. A smaller runtime image also improves security by shrinking the attack surface — there's no Node.js runtime, package manager, or source code present for an attacker to exploit, only a minimal Nginx server and static assets. Smaller images also pull and deploy significantly faster, which matters at scale when spinning up multiple containers or deploying frequently. For build-caching, I ordered COPY package*.json ./ and RUN npm ci before COPY . ., so Docker only re-runs the dependency install step when package.json actually changes, rather than on every source code edit.
 ```
 
 ---
@@ -156,7 +156,7 @@ Write a short analysis of 5–8 lines covering:
 - How smaller images improve image pull and deployment speed
 - One Docker build-caching optimization you used
 
-Write your analysis here.
+Multi-stage Docker builds delivered a substantial reduction in image size: the single-stage image came out to 2.17 GB, while the multi-stage image was only 95 MB, a reduction of approximately 95.6%. This is because the single-stage build keeps Node.js, all node_modules, and the full application source code in the final image, whereas the multi-stage build discards the build environment and keeps only the compiled static files served by nginx:alpine. The smaller runtime image also improves security by shrinking the attack surface: with no Node.js runtime, package manager, or source code present, an attacker has only a minimal Nginx server and static assets to target, and there are fewer packages that could contain unpatched vulnerabilities. Smaller images also pull and deploy significantly faster, which matters at scale when spinning up multiple containers or deploying frequently, since less data is transferred over the network and less storage is used on each host. For build caching, I ordered COPY package*.json ./ and RUN npm ci before COPY . ., so Docker only re-runs the dependency install step when package.json actually changes, rather than on every source code edit.
 
 ---
 
@@ -191,13 +191,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineer-cloudcomputing-ugcPost-7510113724729454592-pp_N/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![Assignment 5 Screenshots](screenshots/assgn2-img7.png)
 
 ---
 
