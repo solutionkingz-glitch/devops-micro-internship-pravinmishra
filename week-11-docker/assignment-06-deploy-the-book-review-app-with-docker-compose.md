@@ -30,7 +30,7 @@ backend/
 docker-compose.yml
 ```
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img1.png)
 
 ---
 
@@ -47,7 +47,7 @@ backend/.dockerignore
 
 Ensure that no real passwords, tokens, or secrets are visible.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img2.png)
 
 ---
 
@@ -63,7 +63,7 @@ Prepare Dockerfiles for the frontend and backend services and build both service
 
 Add a screenshot showing the completed `frontend/Dockerfile`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img3.png)
 
 ---
 
@@ -71,7 +71,7 @@ Add your screenshot here.
 
 Add a screenshot showing the completed `backend/Dockerfile`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img4.png)
 
 ---
 
@@ -83,7 +83,7 @@ Add a screenshot of the terminal showing successful completion of:
 docker compose build
 ```
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img5.png)
 
 ---
 
@@ -105,7 +105,7 @@ Add a screenshot showing the MySQL service in `docker-compose.yml`, including:
 - `mysql_data` volume mount
 - No published MySQL port
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img6.png)
 
 ---
 
@@ -118,7 +118,7 @@ Add a screenshot showing the backend service configuration, including:
 - Browser frontend origin configured for CORS
 - Published backend port
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img7.png)
 
 ---
 
@@ -130,7 +130,7 @@ Add a screenshot showing the frontend service configuration, including:
 - `depends_on` for the backend service
 - Browser-facing `NEXT_PUBLIC_API_URL`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img8.png)
 
 ---
 
@@ -138,7 +138,7 @@ Add your screenshot here.
 
 Add a screenshot showing the `mysql_data` volume definition in `docker-compose.yml`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img9.png)
 
 ---
 
@@ -160,7 +160,7 @@ docker compose ps
 
 The output must show the MySQL, backend, and frontend services running. MySQL must show as healthy.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img10.png)
 
 ---
 
@@ -174,7 +174,7 @@ docker compose logs mysql backend --tail=50
 
 The logs must show MySQL readiness and successful backend database connection.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img11.png)
 
 ---
 
@@ -192,7 +192,7 @@ Add a browser screenshot showing successful user registration or login.
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img12.png)
 
 ---
 
@@ -202,7 +202,7 @@ Add a browser screenshot showing a created book review visible in the applicatio
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img13.png)
 
 ---
 
@@ -213,7 +213,7 @@ Add a browser developer-tools screenshot with:
 - The Network tab showing a successful API request
 - The Console drawer showing no CORS error after the API interaction
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img14.png)
 
 ---
 
@@ -231,7 +231,9 @@ Add a browser screenshot showing the registered user or created review before th
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img15.png)
+
+![Assignment 5 Screenshots](screenshots/assgn6-img15b.png)
 
 ---
 
@@ -247,7 +249,7 @@ docker compose ps
 
 Do not use `docker compose down -v`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img16.png)
 
 ---
 
@@ -257,7 +259,7 @@ Add a browser screenshot showing the same registered user or review after the st
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn6-img17.png)
 
 ---
 
@@ -277,13 +279,18 @@ Write a short explanation of 5–8 lines covering:
 - When a full reset is useful
 - Why a full reset must not be used before persistence evidence is captured
 
-Write your explanation here.
+docker compose down removes the containers and the network but keeps named volumes, so the mysql_data volume and everything in it survive.
+This is the right choice when MySQL data must be preserved, because the next docker compose up creates new containers and mounts the same volume.
+docker compose down -v also deletes the named volumes, which permanently erases the stored database (users, reviews, everything).
+A full reset is useful in development when I want a clean database, for example to re-run seed data or test a fresh install.
+It must not be used before the persistence evidence is complete, because it would destroy the exact data I need to prove survives a restart.
+In production, -v is rarely used without a backup.
 
 ---
 
 # Final Public Frontend URL
 
-**Frontend URL:** `http://<VM_PUBLIC_IP>:<FRONTEND_PORT>`
+**Frontend URL:** http://54.146.123.47:3000
 
 Replace the placeholder with your working application URL.
 
@@ -291,7 +298,7 @@ Replace the placeholder with your working application URL.
 
 # GitHub Repository URL
 
-**Your Fork or Repository URL:** `Add your GitHub repository URL here`
+**Your Fork or Repository URL:**  https://github.com/solutionkingz-glitch/book-review-app
 
 ---
 
@@ -303,11 +310,11 @@ Create a LinkedIn post about the Book Review App deployment and what you learned
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:**  https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-docker-aws-ugcPost-7511407515402891266-Lc-_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of your published LinkedIn post here.
+![Assignment 5 Screenshots](screenshots/assgn6-img18.png)
 
 ---
 
