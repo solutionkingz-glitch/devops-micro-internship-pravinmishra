@@ -12,7 +12,7 @@ In this assignment, you will build a read-only Bash script that audits a running
 
 # Target Container
 
-**Target Container Name:** `Add the exact container name here`
+**Target Container Name:** docker-audit-test
 
 ---
 
@@ -33,7 +33,7 @@ docker-audit.sh
 SKILL.md
 ```
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img1.png)
 
 ---
 
@@ -49,7 +49,7 @@ Add the supplied `docker-audit` skill to Claude Code and confirm that it is avai
 
 Add a screenshot of Claude Code showing `docker-audit` in the available skill list.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img2.png)
 
 ---
 
@@ -70,7 +70,7 @@ Add a terminal screenshot showing:
 - Your full name
 - The usage message displayed when the script runs without a container name
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img3.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a terminal screenshot showing:
 - `docker ps`
 - The audit command using the selected target container name
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img4.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the initial Docker audit results.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img5.png)
 
 ---
 
@@ -119,7 +119,9 @@ Add a Claude Code screenshot showing:
 - Recommended manual fix
 - Verification method
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img6a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn8-img6b.png)
 
 ---
 
@@ -135,7 +137,7 @@ Manually fix one WARN or FAIL finding from the initial audit.
 
 Add a screenshot of the updated Dockerfile or `docker-compose.yml` showing the selected hardening fix.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img7.png)
 
 ---
 
@@ -143,7 +145,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing your full name and the rebuilt or recreated service/container running successfully.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img8.png)
 
 ---
 
@@ -163,7 +165,7 @@ Add a terminal screenshot showing:
 - The updated running container
 - The final audit report
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img9.png)
 
 ---
 
@@ -176,7 +178,13 @@ Write a short comparison covering:
 - Final audit result
 - Security benefit of the improvement
 
-Write your comparison here.
+Initial audit finding: The initial audit identified a WARN for the image tag because the container was using nginx:latest, which is a moving tag.
+
+Change applied: I created a Dockerfile using the specific base image nginx:1.27.2-alpine, built it as docker-audit-test:1.0, and recreated the container using the new image.
+
+Final audit result: The image tag finding changed from WARN to PASS, confirming that the container now uses a specific image tag.
+
+Security benefit: Pinning the image version improves deployment consistency and reproducibility and reduces the risk of unexpected changes caused by updates to the latest tag.
 
 ---
 
@@ -188,13 +196,13 @@ Create a LinkedIn post about the container security checks you performed, one ha
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineering-aws-ugcPost-7512235465216008192-Td62/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post, including the final audit result.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn8-img10.png)
 
 ---
 
