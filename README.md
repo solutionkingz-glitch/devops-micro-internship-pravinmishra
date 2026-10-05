@@ -142,7 +142,7 @@ Week 11 → Docker
 | 08 | Terraform | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudcomputing-aws-ugcPost-7501245140712402944-X660/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/terraform-drift-detection-with-claude-code-building-a-safe-ai-assisted-infrastructure-review-workflow |
 | 09 | Ansible | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-terraform-ansible-ugcPost-7508197593357873152-9iZg/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY |https://kingzcloud.hashnode.dev/aws-devops-terraform-ansible-ai-assisted-deployment |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Docker | 🔄 In Progress | 🔄 In Progress | — | — |
+| 11 | Docker | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineering-aws-ugcPost-7512235465216008192-Td62/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY |https://kingzcloud.hashnode.dev/docker-ci-cd-pipeline-deploying-a-containerized-app-to-aws-ec2 |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
