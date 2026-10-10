@@ -58,7 +58,7 @@ Add a screenshot from AWS or Azure showing:
 * VM status as **Running**
 * Public IP address
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img1.png)
 
 ---
 
@@ -72,7 +72,7 @@ Add an SSH terminal screenshot showing the output of:
 
 The screenshot must confirm a supported Ubuntu version, `x86_64` architecture, and a successful HTTP response from Azure DevOps.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img2.png)
 
 ---
 
@@ -93,7 +93,7 @@ Add a terminal screenshot showing:
 * Agent service start
 * `sudo ./svc.sh status` reporting that the service is running
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img3.png)
 
 > Ensure that the PAT is not visible.
 
@@ -116,7 +116,7 @@ Add a screenshot of the Azure DevOps Agent Pool **Agents** page showing:
 * Agent status as **Online**
 * Agent enabled and available
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img4.png)
 
 ---
 
@@ -138,7 +138,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * Your Full Name
 * Linux verification commands
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img5.png)
 
 ---
 
@@ -156,7 +156,7 @@ Add a screenshot of the successful Azure DevOps pipeline run showing:
 * Output from `df -h`
 * Output from `pwd`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img6.png)
 
 ---
 
@@ -165,7 +165,36 @@ Add your screenshot here.
 Paste the contents of your completed `azure-pipelines.yml` file below.
 
 ```yaml
-# Paste your completed azure-pipelines.yml here
+Condition evaluation
+Starting: Verify self-hosted Ubuntu agent
+==============================================================================
+Task         : Bash
+Description  : Run a Bash script on macOS, Linux, or Windows
+Version      : 3.279.0
+Author       : Microsoft Corporation
+Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/bash
+==============================================================================
+[Host] Selected Node version: Node24 (Strategy: Node24Strategy)
+Generating script.
+========================== Starting Command Output ===========================
+/usr/bin/bash /home/ubuntu/azagent/_work/_temp/31470d6c-ed03-4c53-831e-b1f2a35173a9.sh
+Submitted by: Kingsley Erhatiemwonmon
+Agent name: azure-agent
+Machine name: ip-10-0-1-125
+Operating system details:
+Linux ip-10-0-1-125 6.8.0-1066-aws #69~22.04.1-Ubuntu SMP Mon Sep 21 16:20:15 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+User executing the pipeline:
+ubuntu
+Disk usage:
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root         29G  3.3G   26G  12% /
+tmpfs            1.9G     0  1.9G   0% /dev/shm
+tmpfs            768M  916K  767M   1% /run
+tmpfs            5.0M     0  5.0M   0% /run/lock
+efivarfs         128K  3.1K  120K   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p15  105M  6.1M   99M   6% /boot/efi
+tmpfs            384M  4.0K  384M   1% /run/user/1000
+
 ```
 
 > Do not include your PAT, SSH private key, password, or cloud credentials in the YAML file.
@@ -176,7 +205,11 @@ Paste the contents of your completed `azure-pipelines.yml` file below.
 
 Write a short summary of what you configured.
 
-[Write your summary here.]
+I configured a self-hosted Azure Pipelines agent on an Ubuntu Linux VM and used it to run a test pipeline in Azure DevOps.
+
+First, I created an agent pool in my Azure DevOps organization ([agent-pool-name]) and a Personal Access Token with permission to manage agent pools. On the VM, I downloaded the current Linux x64 agent package (version 5.280.0) from the "Get the agent" window, extracted it into ~/azagent, and installed the required dependencies with installdependencies.sh. I then ran config.sh to register the agent with my organization, authenticating with the PAT and assigning the agent to my pool as [agent-name]. I ran the agent as a background service with svc.sh so it stays online after I disconnect.
+
+To verify the setup, I created azure-pipelines.yml in the root of my Epicbook-review Azure Repos repository. The file sets trigger: none, targets my self-hosted agent pool, and runs a Bash step that prints my name, the agent name, the machine name, and the output of uname -a, whoami, df -h, and pwd. I created a pipeline from this file and authorized it to use the agent pool when Azure DevOps requested permission. The run succeeded, and the log confirmed the job executed directly on my Ubuntu VM.
 
 ---
 
@@ -191,9 +224,9 @@ Add a screenshot of your LinkedIn post showing:
 * Three to five lines explaining your experience
 * A screenshot of the successful pipeline run with no secrets visible
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn1-img7.png)
 
-**LinkedIn Post URL:** [Paste your LinkedIn post URL here]
+**LinkedIn Post URL:** https://www.linkedin.com/posts/kingsley-erhatiemwonmon_azuredevops-devops-cloudengineering-ugcPost-7514760939519262721-4c3j/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 ---
 
