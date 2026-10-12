@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img1.png)
 
 ---
 
@@ -65,7 +65,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img2.png)
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +91,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img3.png)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +115,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img4.png)
 
 ---
 
@@ -136,7 +136,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img5.png)
 
 ## Final Website URL
 
@@ -144,7 +144,7 @@ Add your screenshot here.
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+http://54.173.20.143
 
 ---
 
@@ -152,7 +152,11 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+I imported the Azure Static Website repository into Azure Repos and added my full name to index.html. I then used Terraform to provision the target AWS EC2 instance (an Ubuntu instance in a custom VPC, with a Terraform-generated key pair and a security group allowing SSH only from my workstation and the agent, plus HTTP on port 80). Ansible configured the instance by installing and enabling Nginx and giving the ubuntu deployment user write access to /var/www/html. I confirmed the setup over SSH: Nginx was active, the configuration test passed, the directory was writable, and the local HTTP check returned 200.
+
+In Azure DevOps, I created an SSH service connection using private-key authentication, with no credentials stored in the repository or YAML. I then wrote an azure-pipelines.yml pipeline with a push trigger on all branches, running on my self-hosted agent (azure-agent in SelfHostedPool). The pipeline does a clean checkout, prints run information (my name, branch, commit and agent), copies the website files to /var/www/html with CopyFilesOverSSH@0 (excluding .git and the pipeline file), and verifies the deployment with SSH@0. The verification lists the files, checks that index.html exists, requests the local Nginx endpoint, and prints a success message.
+
+The pipeline completed successfully, and the website was reachable at http://54.173.20.143 showing my name. A later commit to index.html automatically triggered a new run, and the updated content appeared on the site after deployment.
 
 ---
 
@@ -167,11 +171,11 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn2-img6.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_dmi-devops-aws-ugcPost-7515516592466800641-2zah/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 
