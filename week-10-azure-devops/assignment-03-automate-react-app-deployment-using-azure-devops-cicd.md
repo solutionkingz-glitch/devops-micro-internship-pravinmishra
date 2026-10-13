@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img1.png)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img2.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,7 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img3.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img4.png)
 
 ---
 
@@ -143,7 +143,9 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img5a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn3-img5b.png)
 
 ## Final Application URL
 
@@ -151,7 +153,7 @@ Add your screenshot here.
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+http://54.87.246.251/
 
 ---
 
@@ -159,7 +161,21 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+## CI/CD Workflow Summary
+
+I built an automated pipeline in Azure DevOps that deploys the EpicReads React application to an Ubuntu web server on AWS whenever a commit is pushed to the `main` branch.
+
+**Infrastructure:** I used Terraform to provision an Ubuntu EC2 instance with a public IP and a security group (port 80 open to all, port 22 restricted). I then used Ansible to install and enable Nginx, serve content from `/var/www/html`, add SPA routing (`try_files ... /index.html`), enable password SSH, and set the web root ownership for the deployment user without using `chmod 777`.
+
+**Pipeline:** The multi-stage YAML pipeline runs on a self-hosted agent pool and has four stages:
+1. **Build:** installs Node.js 20, runs `npm ci` and `npm run build`, checks that `build/index.html` exists, and publishes the build as a pipeline artifact.
+2. **Test:** installs dependencies and runs the unit tests in non-interactive CI mode. The stage depends on Build.
+3. **Publish:** downloads the build artifact, verifies `index.html` and the `static` assets, and publishes it as a deployment artifact. The stage depends on Test.
+4. **Deploy:** downloads the deployment artifact and uses an SSH Service Connection to clear old files, copy the build into `/var/www/html`, list the deployed files, and confirm Nginx is active. The stage depends on Publish.
+
+**Security:** The VM username and password are stored only in the Azure DevOps SSH Service Connection. No credentials appear in the YAML or the repository.
+
+**Result:** A commit to `main` starts the pipeline automatically. Only the production build files are deployed, not the source code or `node_modules`. After all four stages pass, the updated site is live at `http://54.87.246.251` and shows my name, the date, and the "Azure DevOps carried out by Kingsley Erhatiemwonmon" line.
 
 ---
 
@@ -174,11 +190,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn3-img6.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azuredevops-cicd-ugcPost-7515764120974041088-r1ra/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
