@@ -70,7 +70,7 @@ Add a screenshot of the Infrastructure Pipeline run showing:
 * `backend_private_ip`
 * `mysql_fqdn`
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img1.png)
 
 > Do not expose the MySQL password, Client Secret, Terraform state, SSH private key, or another sensitive value.
 
@@ -86,7 +86,7 @@ Add a screenshot of the Azure Portal Resource Group overview showing:
 * Azure Database for MySQL Flexible Server
 * Related EpicBook resources
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img2.png)
 
 > Hide sensitive IDs, credentials, and database details.
 
@@ -124,7 +124,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img3.png)
 
 ---
 
@@ -137,7 +137,7 @@ Add a screenshot of the Application Pipeline log showing:
 * Zero failed hosts
 * Zero unreachable hosts
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img4.png)
 
 > Do not expose the SSH private key, MySQL password, Client Secret, or complete database connection string.
 
@@ -162,7 +162,9 @@ Add a browser screenshot showing:
 
 The screenshot may show a product, cart, or successful order view.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img5a.png)
+
+![Assignment 5 Screenshots](screenshots/assgn4-img5b.png)
 
 > Do not expose credentials or sensitive information.
 
@@ -172,15 +174,15 @@ Add your screenshot here.
 
 ## Frontend Application URL
 
-[Paste your final EpicBook application URL here.]
+http://52.247.122.4/
 
 ## Infrastructure Repository URL
 
-[Paste your Infrastructure Repository URL here.]
+https://github.com/solutionkingz-glitch/azure-devops-epicbook-infra
 
 ## Application Repository URL
 
-[Paste your Application Repository URL here.]
+https://github.com/solutionkingz-glitch/azure-devops-epicbook-app
 
 ---
 
@@ -188,7 +190,17 @@ Add your screenshot here.
 
 Write a short explanation of why separate Infrastructure and Application Repositories were used.
 
-[Write your explanation here.]
+Separate repositories let each kind of change follow its own lifecycle, ownership and risk level. In this project, the infrastructure repository (azure-devops-epicbook-infra) holds the Terraform that creates the Azure network, VMs and private MySQL server. The application repository (azure-devops-epicbook-app) holds the EpicBook code, the Ansible roles and the deployment pipeline.
+
+Different rates of change. Infrastructure changes rarely, while application code and configuration change often. With two repositories, a small application fix triggers only the Ansible pipeline. It cannot accidentally run terraform apply or touch the VMs, network or database server.
+
+Separation of responsibilities. The infrastructure team can own Terraform and Azure resources, and the application team can own Ansible and the code. Each team reviews and approves its own changes without needing access to the other’s work.
+
+Smaller blast radius and tighter security. Only the infrastructure pipeline uses the Azure service connection, which has Contributor rights on the subscription. The application pipeline never receives it. It gets only the SSH key from Secure Files and the database credentials from a secured variable group. A mistake or compromise in the application pipeline therefore cannot create or delete cloud resources.
+
+Independent pipelines and approvals. The infrastructure pipeline uses a manual approval before apply and keeps its state in a remote backend. The application pipeline can run on every commit without that gate. Each pipeline has its own triggers, permissions and history, which makes failures easier to trace.
+
+A clear, auditable handoff. The only link between the two is the set of non-sensitive Terraform outputs (app_public_ip, backend_ansible_host, backend_private_ip, mysql_fqdn) that were copied into the Ansible inventory and variables. This makes the dependency explicit and reviewable. It could later be automated, for example by publishing outputs as a pipeline artifact or storing them in a shared variable group.
 
 ---
 
@@ -201,7 +213,18 @@ Write a short explanation of how the following non-sensitive Terraform outputs w
 * `backend_private_ip`
 * `mysql_fqdn`
 
-[Write your explanation here.]
+How the Terraform outputs were transferred to the Application Repository
+
+After the Infrastructure Pipeline finished its terraform apply, its final Outputs stage printed the four non-sensitive values in the pipeline log. I opened that successful run and copied them by hand into the Application Repository (azure-devops-epicbook-app). This is the temporary manual handoff the assignment describes.
+
+app_public_ip (52.247.122.4): saved as the frontend host address in the Ansible inventory (ansible/inventory/hosts.ini) and as a variable in ansible/inventory/group_vars/all.yml. The pipeline’s verify stage also uses it to request the site through Nginx.
+backend_ansible_host (20.14.152.107): saved only in hosts.ini as the ansible_host of the backend. This is the public management address Ansible uses for SSH, so it is kept separate from the private application address.
+backend_private_ip (10.10.2.4): saved in all.yml and used in the Nginx template as the upstream, so frontend-to-backend traffic stays on the private network instead of using the backend’s public address.
+mysql_fqdn: saved in all.yml and used by the Ansible database tasks and the backend service’s database connection settings.
+
+I committed these changes to main in the Application Repository with a descriptive commit message. Only non-sensitive values were copied. The MySQL password, the SSH private key, the Terraform state and the Azure client secret were never added to the repository. They stay in the Azure DevOps variable group, Secure Files and the service connection.
+
+The copy is manual and must be repeated if the infrastructure is rebuilt and the values change. It could later be automated by publishing the outputs as a pipeline artifact, writing them to a shared variable group, or triggering the Application Pipeline from the Infrastructure Pipeline.
 
 ---
 
@@ -216,11 +239,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img6.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azure-terraform-ugcPost-7519130869635166208-bBfM/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 Your post must include:
 

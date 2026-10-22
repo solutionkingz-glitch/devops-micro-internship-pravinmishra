@@ -6,7 +6,7 @@ Part of the DevOps Micro Internship (DMI) — Agentic AI Track
 
 ## Student Information
 
-**Full Name:** [Enter your full name]
+**Full Name:** Kingsley Erhatiemwonmon
 
 **GitHub Repository or Fork URL:** [Paste your repository URL]
 
@@ -42,17 +42,17 @@ Confirm that both EpicBook pipelines are healthy and place the supplied assignme
 
 Terminal output showing the latest completed Infrastructure and Application Pipeline runs with successful results.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img1.png)
 
 ## Notes
 
 ### 1. What proves that both pipelines were healthy before the drill?
 
-[Write your answer here.]
+The successful baseline runs of both the Infrastructure Pipeline and the Application Pipeline, showing a Succeeded status in Azure DevOps, proved that both pipelines were healthy before the drill.
 
 ### 2. Why is a healthy baseline necessary before introducing a controlled failure?
 
-[Write your answer here.]
+A healthy baseline provides a reliable point of comparison. It helps confirm that the intentional failure caused the observed problem, rather than a pre-existing issue. It also makes it easier to verify that the pipeline recovers successfully after the failure is removed.
 
 ---
 
@@ -68,21 +68,21 @@ Configure the supplied project context and verify the safety boundaries Claude m
 
 `CLAUDE.md` open in the editor with the Project Overview, Incident Workflow, Safety Rules, and Output Rules visible.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img2.png)
 
 ## Notes
 
 ### 1. Why does Claude need project-specific operational context?
 
-[Write your answer here.]
+Claude needs project-specific operational context to understand how the pipelines, infrastructure, configuration files, and deployment process work together. This context helps it identify the correct pipeline, interpret logs accurately, classify failures, and recommend relevant recovery steps without making unsafe assumptions or modifying production resources unintentionally.
 
 ### 2. Which rules keep the human responsible for the recovery action?
 
-[Write your answer here.]
+The rules keep the human responsible by requiring Claude to diagnose the failure and recommend a fix without applying it automatically. Claude must not edit files, push changes, approve changes, or rerun the pipeline during triage. The engineer must review the evidence, decide whether the recommendation is correct, apply the fix manually, and verify recovery by rerunning the pipeline and triage report.
 
 ### 3. Which rules protect pipeline credentials and application secrets?
 
-[Write your answer here.]
+The rules protect credentials and application secrets by requiring all passwords, access tokens, private SSH keys, and other sensitive values to remain confidential and never be exposed in logs, reports, screenshots, or Git commits. Only sanitized evidence should be included in incident reports. Credentials must be stored securely using protected variables or secure files, and Claude must not retrieve, print, modify, or share secret values unnecessarily. Before committing assignment files, the engineer must inspect them for exposed secrets.
 
 ---
 
@@ -98,7 +98,7 @@ Configure the supplied Bash script and verify that it retrieves and classifies e
 
 Editor showing the script configuration variables, report filenames, check-function array, and read-only log-retrieval functions. Ensure that no token is visible.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img3.png)
 
 ---
 
@@ -106,29 +106,29 @@ Add your screenshot here.
 
 Terminal showing successful Bash syntax validation and executable file permission.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img4.png)
 
 ## Notes
 
 ### 1. Why are pipeline metadata and step console logs handled separately?
 
-[Write your answer here.]
+Pipeline metadata and step console logs are handled separately because they provide different types of information. Pipeline metadata shows the pipeline name, run ID, branch, status, and completion time, while step console logs contain the detailed commands, error messages, and output needed to identify the root cause of a failure. Separating them helps Claude identify a failed run from metadata while relying on console logs for evidence-based diagnosis. It also helps distinguish a pipeline failure from a log-retrieval or permission problem, such as an HTTP 403 error.
 
 ### 2. How does the script obtain the actual console logs?
 
-[Write your answer here.]
+The script obtains the actual console logs by querying the Azure DevOps REST API for the selected pipeline run and retrieving its build logs. It uses the pipeline and run IDs to identify the relevant execution, then saves the retrieved log output for analysis. If the API request fails, for example with HTTP 403, the script reports the retrieval error rather than treating missing logs as evidence of a specific root cause.
 
 ### 3. How does the check-function array control the classification loop?
 
-[Write your answer here.]
+The check-function array stores the available failure-checking functions. The script loops through the array and runs each function against the retrieved pipeline logs. When a function detects a matching error pattern, it identifies the corresponding failure category and records the finding. If none of the functions matches, the failure is classified as Unclassified Pipeline Failure. This structure makes the classification process modular, so new failure checks can be added without rewriting the entire loop.
 
 ### 4. What prevents a failed but unmatched run from being reported as healthy?
 
-[Write your answer here.]
+The script checks the actual pipeline run status independently of the failure-category matching results. If the run has failed but no check function recognizes the error pattern, it reports an Unclassified Pipeline Failure rather than marking the run as healthy. The overall health status and exit code are also calculated from the findings, ensuring that an unmatched failure is still reported as unhealthy.
 
 ### 5. Why are different exit codes useful to another automation tool?
 
-[Write your answer here.]
+Different exit codes allow another automation tool to determine the outcome of a script without having to interpret its full text report. For example, exit code 0 can indicate that the pipeline health check succeeded, while a non-zero exit code indicates a failure or an error requiring attention. This allows CI/CD pipelines, monitoring tools, and scheduled jobs to make reliable decisions, trigger alerts, or stop subsequent steps automatically.
 
 ---
 
@@ -144,17 +144,17 @@ Run the supplied script against the healthy baseline and verify the initial pipe
 
 Healthy pipeline report showing your Full Name, both successful pipelines, Overall Status `HEALTHY`, and captured exit code `0`.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img5.png)
 
 ## Notes
 
 ### 1. What evidence proves that both pipelines are healthy?
 
-[Write your answer here.]
+The successful Azure DevOps run results for both the Infrastructure Pipeline and the Application Pipeline prove that both pipelines are healthy. The /pipeline-triage report should also show the latest relevant runs as successful, Overall Status: HEALTHY, and exit code 0. These results provide evidence that the infrastructure and application deployment workflows are functioning as expected.
 
 ### 2. Why must the baseline exit code be verified before the incident drill?
 
-[Write your answer here.]
+The baseline exit code must be verified before the incident drill to confirm that the triage script works correctly and reports a healthy system before a failure is introduced. An exit code of 0 establishes a known-good starting point. This helps distinguish problems caused by the controlled failure from pre-existing pipeline or script errors and makes it possible to verify that the system returns to a healthy state after recovery.
 
 ---
 
@@ -170,7 +170,7 @@ Configure the supplied Claude Code skill and verify that it runs the Bash tool a
 
 `SKILL.md` showing the frontmatter, manual-invocation setting, narrowly scoped tools, safety rules, and required output structure.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img6.png)
 
 ---
 
@@ -178,25 +178,25 @@ Add your screenshot here.
 
 Healthy `/pipeline-triage` result showing that both pipelines are healthy and no fix is required.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img7.png)
 
 ## Notes
 
 ### 1. Why is `disable-model-invocation: true` appropriate for this skill?
 
-[Write your answer here.]
+It prevents Claude from invoking the skill automatically. The user must deliberately run /pipeline-triage, ensuring that incident diagnosis starts only when requested and reducing the risk of unintended execution.
 
 ### 2. Why should the skill avoid broad Bash approval?
 
-[Write your answer here.]
+Broad Bash approval could allow commands to execute without sufficient review, potentially modifying files, exposing credentials, pushing changes, or affecting infrastructure. Restricting command permissions to necessary, approved operations reduces these risks and keeps the triage process controlled.
 
 ### 3. What work is performed by Bash, and what work is performed by Claude?
 
-[Write your answer here.]
+Bash performs deterministic operations, such as retrieving pipeline metadata and logs, checking failure patterns, generating health reports, saving evidence, and returning exit codes. Claude interprets the findings, explains the likely cause, classifies the incident when evidence supports it, and recommends a specific fix and verification step. Claude should not apply the fix during triage.
 
 ### 4. Why are permission rules required in addition to written safety instructions?
 
-[Write your answer here.]
+Written instructions tell Claude what it should and should not do, but they do not technically prevent every prohibited action. Permission rules enforce access restrictions at the tool level, limiting which commands and operations can execute. Combining instructions with permissions provides stronger protection against accidental or unauthorized changes to files, credentials, pipelines, and infrastructure.
 
 ---
 
@@ -212,25 +212,25 @@ Create a controlled Application Pipeline failure that can be diagnosed without c
 
 Failed Application Pipeline run showing the temporary branch, failed status, failed step, and relevant non-sensitive error evidence.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img8.png)
 
 ## Notes
 
 ### 1. What exact failure did you introduce?
 
-[Write your answer here.]
+I introduced an intentional validation failure in epicbook-app-pipeline.yml on the temporary branch drill/pipeline-failure. The added pipeline step printed DRILL FAILURE: intentional validation failure for Task 6 and executed exit 1, deliberately causing the Validate stage to fail.
 
 ### 2. Which category should detect it?
 
-[Write your answer here.]
+The expected category is Intentional Validation Failure or Build/Validation Failure, depending on the categories implemented in the triage script. In my actual triage run, the tool reported Unclassified Pipeline Failure because it could not retrieve the console logs due to an HTTP 403 error.
 
 ### 3. Why is the failure safe and easily reversible?
 
-[Write your answer here.]
+The failure was introduced through a small, temporary YAML change that could be removed without changing the infrastructure or deployed application. It was designed to stop the pipeline during validation, before the Deploy stage. Recovery required removing the deliberate failure and its job dependency, then committing and pushing the correction.
 
 ### 4. How did you prevent the deliberate failure from reaching `main` or changing the deployed application?
 
-[Write your answer here.]
+I made the change on the separate branch drill/pipeline-failure and did not merge the deliberate failure into main. The failure was configured in the Validate stage, with the normal validation job depending on the intentional failure job. This caused validation to be skipped after the deliberate failure and prevented the Deploy stage from running. After capturing the incident evidence, I removed the failure, pushed the corrected temporary branch, and confirmed that the Application Pipeline succeeded.
 
 ---
 
@@ -246,25 +246,27 @@ Use `/pipeline-triage` to classify the failed Application Pipeline without allow
 
 `/pipeline-triage` output and saved incident report showing the affected pipeline, failure category, sanitized evidence, recommendation, and your Full Name.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img9.png)
 
 ## Notes
 
 ### 1. Which failure category was identified?
 
-[Write your answer here.]
+The triage tool identified the failure as Unclassified Pipeline Failure because it could not retrieve the pipeline console logs. The intended category was an intentional validation failure caused by the deliberate exit 1 command.
 
 ### 2. What exact evidence supported the diagnosis?
 
-[Write your answer here.]
+The triage report identified Application Pipeline run 17, pipeline ID 5, on branch drill/pipeline-failure, with a result of failed. It also reported that the Build Logs API returned HTTP 403 and that reports/app-last-run.log was empty. The failure-drill configuration contained the message DRILL FAILURE: intentional validation failure for Task 6 followed by exit 1, although the triage tool could not independently verify that message from the retrieved logs.
 
 ### 3. Did Claude apply the fix or rerun the pipeline? Why is that important?
 
-[Write your answer here.]
+No. Claude only analyzed the available evidence and recommended manual investigation. It did not apply a fix, push changes, or rerun the pipeline. This is important because the engineer remains responsible for reviewing the diagnosis, approving the corrective action, and verifying recovery, reducing the risk of unauthorized or unsafe infrastructure changes.
 
 ### 4. Which part represents Gather, and which part represents Analyze?
 
-[Write your answer here.]
+Gather is the process of retrieving pipeline metadata, run status, and console logs, then collecting the evidence for the report.
+
+Analyze is the process of examining that evidence, classifying the failure, identifying the likely cause, and recommending a corrective action and verification step. In this incident, log retrieval failed during Gather, limiting the certainty of the Analyze result.
 
 ---
 
@@ -280,7 +282,7 @@ Apply the recommended fix manually and verify that the Application Pipeline and 
 
 Corrected Application Pipeline run showing the temporary branch and successful status.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img10.png)
 
 ---
 
@@ -288,29 +290,29 @@ Add your screenshot here.
 
 Recovery `/pipeline-triage` output showing Overall Status `HEALTHY`, exit code `0`, your Full Name, and both saved report filenames.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn5-img11.png)
 
 ## Notes
 
 ### 1. What exact fix did you apply?
 
-[Write your answer here.]
+I manually removed the intentional_failure_drill job from epicbook-app-pipeline.yml and removed the dependsOn: intentional_failure_drill line from the normal validation job. I then committed and pushed the correction to drill/pipeline-failure.
 
 ### 2. Did the fix match Claude’s recommendation? Explain briefly.
 
-[Write your answer here.]
+Yes. The fix followed the recommended approach of removing the intentional failure and verifying the result through a new pipeline run. I applied the changes manually rather than allowing Claude to modify the repository or initiate recovery actions.
 
 ### 3. What evidence proves that the pipeline recovered?
 
-[Write your answer here.]
+The new Application Pipeline run on drill/pipeline-failure completed successfully and displayed a Succeeded status in Azure DevOps. This confirms that removing the deliberate failure restored the pipeline's ability to complete successfully.
 
 ### 4. Why is a second triage run required after the pipeline becomes green?
 
-[Write your answer here.]
+A second triage run checks the latest pipeline results and verifies that the recovery is reflected in the health report. It helps confirm that the failure is no longer present, the latest run is successful, and the triage script reports the expected healthy status and exit code 0.
 
 ### 5. What risk would be created if Claude could automatically edit, push, approve, and rerun the pipeline?
 
-[Write your answer here.]
+Claude could make an incorrect or unreviewed change, expose credentials, trigger an unintended deployment, or modify production infrastructure. Automatic pushing and approval could bypass human review, while automatic reruns could repeat a harmful operation. Requiring human authorization for recovery keeps the engineer accountable and ensures changes are reviewed and verified before deployment.
 
 ---
 
@@ -318,7 +320,7 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azure-terraform-ugcPost-7519130869635166208-bBfM/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 ## Evidence
 
@@ -326,7 +328,7 @@ Add your screenshot here.
 
 Published LinkedIn post showing its text and at least one image or link.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn4-img6.png)
 
 ---
 
