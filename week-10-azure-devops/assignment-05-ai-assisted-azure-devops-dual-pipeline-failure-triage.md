@@ -8,9 +8,9 @@ Part of the DevOps Micro Internship (DMI) — Agentic AI Track
 
 **Full Name:** Kingsley Erhatiemwonmon
 
-**GitHub Repository or Fork URL:** [Paste your repository URL]
+**GitHub Repository or Fork URL:** https://github.com/solutionkingz-glitch/azure-devops-epicbook-app
 
-**Public LinkedIn Post URL:** [Paste your LinkedIn post URL]
+**Public LinkedIn Post URL:** https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azure-terraform-ugcPost-7519130869635166208-bBfM/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 ---
 
