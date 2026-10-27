@@ -3,8 +3,8 @@
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-Pravin_Mishra-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-12%2F15-green?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-12%2F14-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-13%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-13%2F14-green?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -105,8 +105,8 @@ Week 10 → Azure DevOps CI/CD
 Week 11 → Docker
 [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/)
 
-<!-- Week 12 → Kubernetes -->
-<!-- [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) -->
+Week 12 → Kubernetes
+[![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/)
 
 <!-- Week 13 → Final Project / Capstone -->
 <!-- [![Week 13 – Capstone](./badges/week-13.svg)](./week-13-final-project/) -->
@@ -143,7 +143,7 @@ Week 11 → Docker
 | 09 | Ansible | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-terraform-ansible-ugcPost-7508197593357873152-9iZg/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY |https://kingzcloud.hashnode.dev/aws-devops-terraform-ansible-ai-assisted-deployment |
 | 10 | Azure DevOps (CI/CD) | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azure-terraform-ugcPost-7519130869635166208-bBfM/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/docker-ci-cd-pipeline-deploying-a-containerized-app-to-aws-ec2 |
 | 11 | Docker | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineering-aws-ugcPost-7512235465216008192-Td62/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY |https://kingzcloud.hashnode.dev/docker-ci-cd-pipeline-deploying-a-containerized-app-to-aws-ec2 |
-| 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
+| 12 | Kubernetes | 🔄 In Progress | 🔄 In Progress | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
