@@ -200,7 +200,7 @@ Complete this section only if you attempt Task 5. Otherwise, mark it as “Not a
 
 #### Optional Screenshot — Pod output showing the RESTARTS count increasing during the restart-loop observation
 
-Add your screenshot here if attempted.
+Not attempted
 
 No specific restart count or CrashLoopBackOff status is required.
 
@@ -210,15 +210,15 @@ No specific restart count or CrashLoopBackOff status is required.
 
 **1. What is a restart loop?**
 
-Add your answer here.
+Not attempted
 
 **2. Why can an aggressive liveness probe be harmful?**
 
-Add your answer here.
+Not attempted
 
 **3. Why should liveness checks be lightweight and carefully tuned?**
 
-Add your answer here.
+Not attempted
 
 ---
 
