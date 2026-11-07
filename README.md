@@ -143,7 +143,7 @@ Week 12 → Kubernetes
 | 09 | Ansible | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-terraform-ansible-ugcPost-7508197593357873152-9iZg/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY |https://kingzcloud.hashnode.dev/aws-devops-terraform-ansible-ai-assisted-deployment |
 | 10 | Azure DevOps (CI/CD) | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-azure-terraform-ugcPost-7519130869635166208-bBfM/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/docker-ci-cd-pipeline-deploying-a-containerized-app-to-aws-ec2 |
 | 11 | Docker | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_devops-cloudengineering-aws-ugcPost-7512235465216008192-Td62/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY |https://kingzcloud.hashnode.dev/docker-ci-cd-pipeline-deploying-a-containerized-app-to-aws-ec2 |
-| 12 | Kubernetes | 🔄 In Progress | 🔄 In Progress | — | — |
+| 12 | Kubernetes | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/kingsley-erhatiemwonmon_kubernetes-devops-minikube-ugcPost-7524564084986531840-W5CG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY | https://kingzcloud.hashnode.dev/kubernetes-in-practice-azure-aks-load-balancing-autoscaling-and-ai-assisted-troubleshooting |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>

@@ -12,19 +12,19 @@ Deploy the Book Review App as a production-style three-tier application using Ku
 
 ## Submission Details
 
-**Full Name:** Add your full name here.
+**Full Name:** Kingsley Erhatiemwonmon
 
-**Kubernetes Platform:** Add your platform here.
+**Kubernetes Platform:** Minikube v1.39.0 (Kubernetes v1.37.0, Calico CNI, containerd runtime, Docker driver) on WSL2 Ubuntu
 
 **Namespace:** book-review
 
-**Frontend URL or IP:** Add the working endpoint here.
+**Frontend URL or IP:** http://localhost:8080 (local access via `kubectl port-forward svc/frontend 8080:80`, since Minikube has no public LoadBalancer IP)
 
-**Access Method:** Public LoadBalancer, Ingress, or documented local access.
+**Access Method:** Documented local access (kubectl port-forward svc/frontend 8080:80, opened at http://localhost:8080)
 
-**GitHub Manifests or Helm Chart URL:** Add your repository link here.
+**GitHub Manifests or Helm Chart URL:** https://github.com/solutionkingz-glitch/book-review-k8s
 
-**Architecture Diagram:** Add your diagram or link here.
+**Architecture Diagram:** https://drive.google.com/file/d/1dz-LraryX41ziHvqxCrBfYgdgVpnSsHf/view?usp=drive_link
 
 ---
 
@@ -38,7 +38,7 @@ Prepare the cluster, application source, container images, and tooling needed fo
 
 #### Screenshot 1 — Active Kubernetes context and Ready nodes
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img1.png)
 
 ---
 
@@ -46,7 +46,7 @@ Add your screenshot here.
 
 Required only if you choose Helm. Skip this screenshot if using YAML manifests.
 
-Add your screenshot here, or write “Not applicable — using YAML manifests.”
+Not applicable — using YAML manifests.
 
 ---
 
@@ -60,7 +60,7 @@ Document the workloads, networking, configuration, storage, and permitted commun
 
 #### Screenshot 3 — Completed Kubernetes architecture diagram
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img3.png)
 
 ---
 
@@ -74,13 +74,13 @@ Provide application configuration and credentials without embedding sensitive va
 
 #### Screenshot 4 — ConfigMap configuration or describe output showing non-sensitive values
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img4.png)
 
 ---
 
 #### Screenshot 5 — Secret references or describe output showing names and keys without sensitive values
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img5.png)
 
 ---
 
@@ -94,13 +94,13 @@ Provide persistent MySQL storage and allow the backend to connect without exposi
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet and PVC status
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img6.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img7.png)
 
 ---
 
@@ -114,7 +114,7 @@ Run one or two Node.js/Express backend replicas on port 3001 and expose them thr
 
 #### Screenshot 8 — Backend Deployment, ready Pods, and internal Service
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img8.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add your screenshot here.
 
 If the application does not log successful database connections, provide a successful database-backed request alongside the startup logs.
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img9.png)
 
 ---
 
@@ -136,13 +136,13 @@ Run the Next.js frontend behind Nginx on port 80 and proxy API requests to the i
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img10.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name and port 3001
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img11.png)
 
 ---
 
@@ -156,13 +156,13 @@ Expose the frontend and enforce the intended communication path between applicat
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress configuration and assigned endpoint, or documented local access method
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img12.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy or equivalent restriction, with access-test evidence
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img13.png)
 
 ---
 
@@ -176,25 +176,25 @@ Prove that the frontend, backend, and MySQL database work together and collect o
 
 #### Screenshot 14 — `kubectl get all` output for the book-review namespace
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img14.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the URL visible, including evidence of a successful user flow
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img15.png)
 
 ---
 
 #### Screenshot 16 — Frontend or Nginx container logs
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img16.png)
 
 ---
 
 #### Screenshot 17 — Backend logs and evidence of a successful database-backed operation
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img17.png)
 
 ---
 
@@ -203,6 +203,8 @@ Add your screenshot here.
 Add your screenshot here, or write “Not attempted.”
 
 Multiple images may be included under a screenshot number when needed to demonstrate the complete user flow.
+
+Not attempted
 
 ---
 
@@ -216,7 +218,7 @@ Add selected improvements without breaking the required three-tier architecture.
 
 #### Screenshot 19 — Optional: Evidence of selected Helm, HPA, probe, or TLS improvements
 
-Add your screenshot here, or write “Not attempted.”
+Not attempted.
 
 ---
 
@@ -230,11 +232,11 @@ Explain your three-tier architecture, demonstrate the working application, and s
 
 #### Screenshot 20 — Published LinkedIn post about your Book Review App deployment on Kubernetes
 
-Add your screenshot here.
+![Assignment 5 Screenshots](screenshots/assgn10-img20.png)
 
 ### LinkedIn Post URL
 
-Add your published LinkedIn post URL here.
+https://www.linkedin.com/posts/kingsley-erhatiemwonmon_kubernetes-devops-minikube-ugcPost-7524564084986531840-W5CG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAClDkSEBa4Zo6dTWVIEEl8FJLczvH_zPHtY
 
 ---
 
@@ -244,31 +246,111 @@ Add your published LinkedIn post URL here.
 
 Describe the application components and user flows you successfully deployed and tested.
 
-Add your summary here.
+**Components deployed**
+- **Frontend:** 2 replicas, each Pod running Next.js (port 3000) and Nginx (port 80), exposed through a LoadBalancer Service. Nginx serves the app and proxies `/api/` requests to the internal backend Service.
+- **Backend:** 2 Node.js/Express replicas listening on `0.0.0.0:3001`, exposed only through a ClusterIP Service. Both connected to MySQL and the startup logs showed schema sync and seed data.
+- **Database:** a MySQL 8.0 StatefulSet with a 1Gi PersistentVolumeClaim (`data-mysql-0`, Bound) and a headless internal Service.
+- **Configuration:** non-sensitive values in ConfigMaps (`book-review-config`, `nginx-config`) and credentials in a Secret (`book-review-secret`). The real Secret is not in Git, only a placeholder example.
+- **Network restrictions:** default-deny NetworkPolicies, with frontend to backend on 3001, backend to MySQL on 3306, and DNS allowed.
+
+**User flows and tests that passed**
+- The homepage loaded at `http://localhost:8080` and listed the seeded books.
+- `curl http://localhost:8080/api/books` returned JSON through Nginx, the backend Service, the backend Pods and MySQL.
+- I registered a new user, logged in, opened a book and submitted a review. The review appeared in the `Reviews` table in MySQL.
+- After `kubectl rollout restart deployment/backend`, the backend Pods recovered and the saved review was still there.
+- After deleting the `mysql-0` Pod, the StatefulSet recreated it, the PVC stayed Bound and the data survived.
+- NetworkPolicy tests: a Pod in the `default` namespace was denied access to the backend (request timed out), while a Pod labeled `tier=frontend` received the books JSON. The app kept working through the frontend after the policies were applied.
+- The backend and MySQL Services have no external IP, so they are not publicly exposed.
 
 ## Issues and Fixes
 
 Describe the main issues encountered, their causes, and how you resolved them.
 
-Add your summary here.
+**1. Frontend API URL is fixed at build time**
+- **Cause:** Next.js inlines `NEXT_PUBLIC_API_URL` during `npm run build`, so a ConfigMap cannot change it at runtime. The code also falls back to `http://localhost:3001` when the value is empty, which would break in a browser.
+- **Fix:** Built the image with `NEXT_PUBLIC_API_URL=/api`, so the browser calls the frontend endpoint and Nginx forwards requests to the internal backend Service.
+
+**2. Frontend and backend route paths did not match**
+- **Cause:** The backend serves routes under `/api/...`. `api.js` calls `${API_URL}/books`, but `page.js` calls `${API_URL}/api/books`, which became `/api/api/books`.
+- **Fix:** Added an Nginx rewrite (`^/api/api/(.*)$` to `/api/$1`) in the `/api/` location, so no application code had to change.
+
+**3. Backend would have listened on the wrong port and interface**
+- **Cause:** `server.js` defaults to port 5000, and `containerPort: 3001` alone does not change the listening port. `app.listen` also had no explicit host.
+- **Fix:** Set `PORT: "3001"` in the ConfigMap and changed the code to `app.listen(PORT, "0.0.0.0", ...)`.
+
+**4. Secrets could have been baked into the images**
+- **Cause:** The backend folder contained a `.env` file and there was no `.dockerignore`, so `COPY . .` would have copied it into the image. The upstream repo also tracks `.env` and `node_modules`.
+- **Fix:** Added `.dockerignore` files to the backend and frontend. The submission repo contains only manifests and my app changes, and the real Secret is excluded by `.gitignore`.
+
+**5. The frontend Dockerfile was not production-ready**
+- **Cause:** It ran `npm run dev` and had no way to pass the API URL at build time.
+- **Fix:** Wrote a multi-stage Dockerfile with `ARG NEXT_PUBLIC_API_URL` that builds the app and runs `npm start`.
+
+**6. Image build failed with a buildkit 404 error**
+- **Cause:** `eval $(minikube docker-env)` pointed Docker at a containerd-based Minikube node, which is not a real Docker daemon.
+- **Fix:** Ran `minikube docker-env -u`, built the images with normal Docker, then used `minikube image load` to copy them into the cluster.
+
+**7. Seed-data race between backend replicas**
+- **Cause:** Each backend replica runs `sync({alter: true})` and inserts seed data on startup, so two replicas starting together can collide on the unique user email.
+- **Fix:** Deployed the backend with 1 replica first, waited for the seed log lines, then scaled to 2.
+
+**8. CORS would reject login and review requests**
+- **Cause:** The backend only accepts origins listed in `ALLOWED_ORIGINS`, and browsers send an `Origin` header on POST requests.
+- **Fix:** Set `ALLOWED_ORIGINS` to the exact browser URL, `http://localhost:8080`.
+
+**9. LoadBalancer EXTERNAL-IP stays pending on Minikube**
+- **Cause:** Minikube has no cloud load balancer.
+- **Fix:** Documented the local access method and used `kubectl port-forward svc/frontend 8080:80`.
+
+**10. Seeded users cannot log in**
+- **Cause:** The sample users have fake plaintext passwords rather than hashed ones.
+- **Fix:** Registered a new user to test login and reviews.
+
+**Note:** Issues 2, 3, 7 and 8 were identified by reading the code before deployment, so I handled them in the design rather than debugging them after failures.
 
 ## Tools and Sources Used
 
 List the documentation and tools that helped you complete the assignment.
 
-Add your tools and sources here.
+**Tools used**
+- **Minikube v1.39.0** with the Calico CNI: local Kubernetes cluster that enforces NetworkPolicy
+- **kubectl**: deploying and inspecting resources, logs, events and port-forwarding
+- **Docker** (on WSL2 Ubuntu): building the backend and frontend images
+- **`minikube image load`**: loading the local images into the cluster
+- **Nginx 1.27 (alpine)**: reverse proxy for the frontend and API
+- **MySQL 8.0**: database tier, run as a StatefulSet with a PersistentVolumeClaim
+- **busybox**: temporary Pods for the NetworkPolicy allow and deny tests
+- **openssl**: generating random database and JWT credentials
+- **Git and GitHub**: version control and the submission repo
+- **Mermaid Live Editor (mermaid.live)**: drawing the architecture diagram
+- **Claude (Anthropic AI assistant)**: guidance on the deployment design, manifests, troubleshooting and documentation. I ran every command myself on my own cluster and verified the results.
+
+**Sources**
+- **Book Review App repository** (https://github.com/pravinmishraaws/book-review-app): the application source, `Dockerfile`s, `docker-compose.yml`, `mysql_docker.md` and `docker_frontend-README.md`, which I read to find the real environment variable names, ports, routes and database setup
+- **Assignment 10 instructions**: architecture rules, task steps and the required evidence
+- **Kubernetes documentation** (https://kubernetes.io/docs): Deployments, StatefulSets, Services, ConfigMaps, Secrets and NetworkPolicy
+- **Minikube documentation** (https://minikube.sigs.k8s.io/docs): CNI options, loading images and LoadBalancer behavior
+- **Next.js documentation** (https://nextjs.org/docs): how `NEXT_PUBLIC_*` variables are inlined at build time
+- **Nginx documentation** (https://nginx.org/en/docs): `proxy_pass` and `rewrite` directives
 
 ## Optional Improvements
 
 Describe any optional improvements implemented, or write “Not attempted.”
 
-Add your summary here.
+**Partially implemented:** readiness probes were included in the base manifests.
+- **Backend:** TCP readiness probe on port 3001
+- **Nginx (frontend):** HTTP readiness probe on `/` at port 80
+- **MySQL:** exec readiness probe using `mysqladmin ping`
+
+These keep traffic away from Pods that are not ready yet, such as a backend still starting up or MySQL still initializing.
+
+**Not attempted:** Helm chart, Horizontal Pod Autoscaling, liveness probes, and TLS with Ingress and cert-manager. The deployment uses plain Kubernetes manifests.
 
 ## Cleanup or Reuse Plan
 
 State which resources were removed or why the environment is being retained.
 
-Add your cleanup status or reuse plan here.
+The environment is being retained temporarily so the deployment can be re-checked or re-demonstrated if more evidence is needed. It runs on a local Minikube cluster in the `book-review` namespace, so there are no cloud resources or ongoing charges. When no longer needed, I will remove it with `kubectl delete namespace book-review` followed by `minikube stop`, and I will not touch the unrelated `kind` cluster on my machine. The manifests are in the GitHub repo, so the deployment can be recreated.
 
 ---
 
